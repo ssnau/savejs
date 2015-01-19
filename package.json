@@ -1,0 +1,23 @@
+{
+  "name": "savejs",
+  "version": "1.0.0",
+  "description": "a js util library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssnau/savejs.git"
+  },
+  "keywords": [
+    "util",
+    "library"
+  ],
+  "author": "ssnau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssnau/savejs/issues"
+  },
+  "homepage": "https://github.com/ssnau/savejs"
+}
