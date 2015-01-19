@@ -1,4 +1,4 @@
-var save = require('./');
+var save = require('../');
 var assert = require('assert');
 
 describe('get should work', function() {
@@ -24,7 +24,9 @@ describe('get should work', function() {
             a1: {
                 b: 'good',
                 c: 0,
-                d: null
+                d: null,
+                x: 3,
+                y: new Date
             },
             a2: [
                 'hello',
@@ -32,8 +34,13 @@ describe('get should work', function() {
             ]
         }
         assert.equal(save.get(obj, 'a1.b'), 'good');
+        assert.equal(save.get(obj, 'a1.b.c'), void 0);
         assert.equal(save.get(obj, 'a1.c'), 0);
+        assert.equal(save.get(obj, 'a1.c.f'), void 0);
         assert.equal(save.get(obj, 'a1.d'), null);
+        assert.equal(save.get(obj, 'a1.x'), 3);
+        assert.equal(save.get(obj, 'a1.y') - 0 > 10000, true);
+        assert.equal(save.get(obj, 'a1.y.x'), void 0);
 
         assert.equal(save.get(obj, 'a2.0'), 'hello');
         assert.equal(save.get(obj, 'a2.1'), 'world');

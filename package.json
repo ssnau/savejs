@@ -4,7 +4,7 @@
   "description": "a js util library",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
