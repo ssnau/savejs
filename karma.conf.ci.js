@@ -27,6 +27,7 @@ module.exports = function(config) {
 
     sauceLabs: {
       testName: 'SaveJS',
+      "public": "public",
       startConnect: true
     },
     // BrowserStack config for local development.
