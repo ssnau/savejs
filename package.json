@@ -4,7 +4,7 @@
   "description": "a js util library",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test && sudo ./node_modules/karma/bin/karma start karma.conf.ci.js"
+    "test": "mocha test && karma start karma.conf.ci.js"
   },
   "devDependencies": {
     "browserify": "^8.1.1",
