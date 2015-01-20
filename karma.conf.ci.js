@@ -3,9 +3,8 @@ var base = require('./karma.conf.base.js');
 var _ = require('lodash');
 
 module.exports = function(config) {
-    console.log('travis job number:', process.env.TRAVIS_JOB_NUMBER);
+  console.log('travis job number:', process.env.TRAVIS_JOB_NUMBER);
 
-  // Browsers to run on Sauce Labs
   var customLaunchers = {
     'SL_Chrome': {
       base: 'SauceLabs',
@@ -17,7 +16,6 @@ module.exports = function(config) {
       version: '9'
     }
   };
-
 
   config.set(_.merge({}, base, {
     // test results reporter to use
@@ -48,7 +46,6 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: Object.keys(customLaunchers),
   }));
-
 
   if (process.env.TRAVIS) {
         var buildLabel = 'TRAVIS #' + process.env.TRAVIS_BUILD_NUMBER + ' (' + process.env.TRAVIS_BUILD_ID + ')';

@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/ssnau/savejs.svg)](https://travis-ci.org/ssnau/savejs)
 [![npm version](https://badge.fury.io/js/savejs.svg)](http://badge.fury.io/js/savejs)
 [![Dependency Status](https://david-dm.org/ssnau/savejs.svg)](https://david-dm.org/ssnau/savejs.svg)
+[![Dependency Status](https://david-dm.org/ssnau/savejs.svg)](https://david-dm.org/ssnau/savejs.svg)
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/ssnau.svg)](https://saucelabs.com/u/ssnau)
 
 SaveJS
 -------
