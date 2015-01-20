@@ -39,9 +39,12 @@ module.exports = function(config) {
     },
     captureTimeout: 120000,
     customLaunchers: customLaunchers,
+    // level of logging
+    // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
+    logLevel: config.LOG_INFO,
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: Object.keys(customLaunchers),
-  }, base);
+  }, base));
 };

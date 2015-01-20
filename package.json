@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
-    "sauce": "karma start karma.conf.ci.js"
+    "sauce": "./node_modules/karma/bin/karma start karma.conf.ci.js"
   },
   "devDependencies": {
     "browserify": "^8.1.1",
@@ -14,11 +14,11 @@
     "karma": "^0.12.28",
     "karma-browserify": "^1.0.1",
     "karma-chrome-launcher": "^0.1.7",
-    "karma-jasmine": "^0.3.2",
-    "karma-chrome-launcher": "^0.1.7",
     "karma-firefox-launcher": "^0.1.4",
+    "karma-jasmine": "^0.3.2",
     "karma-safari-launcher": "^0.1.1",
     "karma-sauce-launcher": "^0.2.10",
+    "lodash": "^2.4.1",
     "mocha": "^2.1.0"
   },
   "repository": {
