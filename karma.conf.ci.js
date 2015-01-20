@@ -6,22 +6,23 @@ module.exports = function(config) {
   console.log('travis job number:', process.env.TRAVIS_JOB_NUMBER);
 
   var customLaunchers = {
-      'SL_Chrome': {
+    'SL_Chrome': {
         base: 'SauceLabs',
         browserName: 'chrome',
         version: '39'
-      },
-      'SL_Firefox': {
+    },
+    'SL_Firefox': {
         base: 'SauceLabs',
         browserName: 'firefox',
         version: '31'
-      },
-      'SL_Safari': {
+    },
+    'SL_Safari': {
         base: 'SauceLabs',
         browserName: 'safari',
         platform: 'OS X 10.10',
         version: '8'
-      },
+    },
+    /*
     'SL_IE6': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
@@ -37,6 +38,7 @@ module.exports = function(config) {
       browserName: 'internet explorer',
       version: '8'
     },
+    */
     'SL_IE9': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
