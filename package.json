@@ -6,8 +6,18 @@
   "scripts": {
     "test": "mocha test"
   },
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "chrome/latest",
+      "firefox/latest"
+    ]
+  },
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "tape": "^3.4.0"
   },
   "repository": {
     "type": "git",
