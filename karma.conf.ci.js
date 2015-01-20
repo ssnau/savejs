@@ -1,5 +1,5 @@
 var fs = require('fs');
-var base = require('base');
+var base = require('./karma.conf.base.js');
 var _ = require('lodash');
 
 module.exports = function(config) {
@@ -28,11 +28,13 @@ module.exports = function(config) {
     }
   };
 
-  config.set(_.assign({}, {
+  config.set(_.merge({}, base, {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['dots', 'saucelabs'],
+
+    singleRun: true,
 
     sauceLabs: {
       testName: 'SaveJS'
@@ -46,5 +48,5 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: Object.keys(customLaunchers),
-  }, base));
+  }));
 };

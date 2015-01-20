@@ -1,7 +1,7 @@
 module.exports = function(config) {
    var base = require('./karma.conf.base.js');
    var _ = require('lodash');
-  config.set(_.merge({}, {
+  config.set(_.merge({}, base, {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
@@ -19,5 +19,5 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: ['Chrome', 'Firefox'],
-  }, base));
+  }));
 };
