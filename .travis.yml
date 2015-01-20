@@ -1,11 +1,10 @@
 language: node_js
 node_js:
-  - "0.11"
   - "0.10"
 env:
   global:
-    - secure: Vg55/R1EcOsOedqX6spkGm9dT3GEpKxOP/2gMTJcF84NUldD57BUTXH++YDa/mY4Lsbmo4OT2VO8YXFEoR8FD4XL/25c4LJZ1pDaHRGFJ5X9Sy+9ijfM3sNiVupqcuB4Kwgp50tBeeZN8Y0KFrEDadA3XYeNRZqRHfr+ZrW/z24=
-    - secure: LZGCo5HmUZOJWuSWyjJPwCEFwlZ6344jOyt9DxCAxGUVF2vi2amV/IlNRUMMnjzjQfo4J65F3AOPnDpTX1Mq/37c7YymtmMhhCutmWmUEdgOkQxyoGEbvu8og4PDxL3/RZqW+gvxxi/yLIh7rrjF7866HEc6hqnx39Q+meNVm30=
+    - secure: KBseOoUTZgbdB/asdjjQn4jsBduthUD0Qg90kuRPNg5m39e8JMzZ1smhIsTRho7DWTfJliubQYSZMkMz8rN6W1CufSKZK0ZV5kWz9nOO9eXvM61WiZlr1Hk0Evu99HaLndkg1jp/s7xcZP+2MRODeXWM6XQBV8qZ+35GtAMHZg==
+    - secure: Gux+aEcMsXNUTbYnqMZcvrwtfFZmKBM0sFVJBMvEYkSRRjAjvcA6+nbY7QoQ82ChXGjwaP88MG7Rz/+vR6ZQpX6QlYoJUUIJnfXCt3v1S04ssd5cN35ZxCMA4MaND0HCj1KUVZNDNntMs5pgeOAP70iX+NyqLY3q2zCwwMhuvS4=
+
 addons:
   sauce_connect: true
-
