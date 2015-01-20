@@ -6,15 +6,52 @@ module.exports = function(config) {
   console.log('travis job number:', process.env.TRAVIS_JOB_NUMBER);
 
   var customLaunchers = {
-    'SL_Chrome': {
+      'SL_Chrome': {
+        base: 'SauceLabs',
+        browserName: 'chrome',
+        version: '39'
+      },
+      'SL_Firefox': {
+        base: 'SauceLabs',
+        browserName: 'firefox',
+        version: '31'
+      },
+      'SL_Safari': {
+        base: 'SauceLabs',
+        browserName: 'safari',
+        platform: 'OS X 10.10',
+        version: '8'
+      },
+    'SL_IE6': {
       base: 'SauceLabs',
-      browserName: 'chrome'
-    } ,
+      browserName: 'internet explorer',
+      version: '6'
+    },
+    'SL_IE7': {
+      base: 'SauceLabs',
+      browserName: 'internet explorer',
+      version: '7'
+    },
+    'SL_IE8': {
+      base: 'SauceLabs',
+      browserName: 'internet explorer',
+      version: '8'
+    },
     'SL_IE9': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
       version: '9'
-    }
+    },
+    'SL_IE10': {
+      base: 'SauceLabs',
+      browserName: 'internet explorer',
+      version: '10'
+    },
+    'SL_IE11': {
+      base: 'SauceLabs',
+      browserName: 'internet explorer',
+      version: '11'
+    },
   };
 
   config.set(_.merge({}, base, {
