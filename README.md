@@ -19,13 +19,16 @@ save.get({a: {b:'world'}}, 'a.b.c', 'jack') => 'jack'
 
 ###hasOwn
 
-a shortcut to `hasOwnProperty`.
+Given an object and a path, return if the object contains the path.
 
 ```javascript
 save.hasOwn({a: 'hello'}, 'a') => true
-save.hasOwn({a: 'hello'}, 'b') => false
+save.hasOwn({a: {b:'world'}}, 'a.b') => true
+save.hasOwn({a: {b:'world'}}, 'a.b.c') => false
+save.hasOwn({a: {b: false}}, 'a.b') => true
 
 ```
 
-
-
+License
+----
+MIT
