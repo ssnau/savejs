@@ -7,4 +7,7 @@ env:
     - secure: Gux+aEcMsXNUTbYnqMZcvrwtfFZmKBM0sFVJBMvEYkSRRjAjvcA6+nbY7QoQ82ChXGjwaP88MG7Rz/+vR6ZQpX6QlYoJUUIJnfXCt3v1S04ssd5cN35ZxCMA4MaND0HCj1KUVZNDNntMs5pgeOAP70iX+NyqLY3q2zCwwMhuvS4=
 
 addons:
-  sauce_connect: true
+  sauce_connect:
+    username: "ssnau"
+    access_key:
+        secure: "MsffzQnFHpzcBuHLe/QDnNO57G1Q2+obPfq0+BPBN0umBvYirWO+7dI6IWWDNIN95ieIpHOa7dl1qHM0QzVS8o2LCCWRLyaQkTj17/Edtngh+XNZFo9a56DTuppft1JQBsWf7UDkSUf7zuDK89ngxdn8yuOpqITpxFooyfaMQWo="
