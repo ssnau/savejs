@@ -1,6 +1,6 @@
 {
   "name": "savejs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a js util library",
   "main": "index.js",
   "scripts": {
@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/ssnau/savejs/issues"
   },
-  "homepage": "https://github.com/ssnau/savejs"
+  "homepage": "https://github.com/ssnau/savejs",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
 }

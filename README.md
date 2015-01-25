@@ -36,6 +36,22 @@ save.hasOwn({a: {b: false}}, 'a.b') => true
 
 ```
 
+###paths
+
+Given an object/array, return all its paths and corresponding values.
+
+```javascript
+save.paths({a:1, b: { c: 2, d: 3}})
+
+=>
+
+[
+    { path: ['a', 'c'], value: 2 },
+    { path: ['a', 'd'], value: 3 }
+]
+
+```
+
 License
 ----
 MIT
