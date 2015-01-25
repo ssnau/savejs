@@ -41,13 +41,30 @@ save.hasOwn({a: {b: false}}, 'a.b') => true
 Given an object/array, return all its paths and corresponding values.
 
 ```javascript
-save.paths({a:1, b: { c: 2, d: 3}})
+save.paths({a:1, b: { c: 2, d: 3}, f: 7})
 
 =>
 
 [
-    { path: ['a', 'c'], value: 2 },
-    { path: ['a', 'd'], value: 3 }
+    { path: ['a'], value: 1 },
+    { path: ['b', 'c'], value: 2 },
+    { path: ['b', 'd'], value: 3 },
+    { path: ['f'], value: 7 }
+]
+
+
+// you may also want to concat the path with '.', 
+// just put it as the second parameter
+
+save.paths({a:1, b: { c: 2, d: 3}, f: 7}, '.')
+
+=>
+
+[
+    { path: 'a', value: 1 },
+    { path: 'b.c', value: 2 },
+    { path: 'b.d', value: 3 },
+    { path: 'f', value: 7 }
 ]
 
 ```

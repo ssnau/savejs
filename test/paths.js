@@ -10,6 +10,19 @@ describe('paths', function() {
       ], paths);
   });
 
+  it('simple object2', function(){
+    paths = ps({a:1, b: { c: 2, d: 3}, f: 7});
+
+    assert.deepEqual(
+      [
+          { path: ['a'], value: 1 },
+          { path: ['b', 'c'], value: 2 },
+          { path: ['b', 'd'], value: 3 },
+          { path: ['f'], value: 7 }
+      ]
+      , paths);
+  });
+
   it('simple array', function(){
     var paths = ps(["a", "b"]);
 
@@ -18,7 +31,6 @@ describe('paths', function() {
       {path: ['1'], value: "b"},
       ], paths);
   });
-
 
   it('mixed array and obj', function() {
     var paths = ps([{a:1, b:2}, {a:6}]);
@@ -40,6 +52,19 @@ describe('paths', function() {
     assert.throws(function(){
       ps(a);
     });
+  });
+
+  it('support concat', function(){
+    paths = ps({a:1, b: { c: 2, d: 3}, f: 7}, '.');
+
+    assert.deepEqual(
+      [
+          { path: 'a', value: 1 },
+          { path: 'b.c', value: 2 },
+          { path: 'b.d', value: 3 },
+          { path: 'f', value: 7 }
+      ]
+      , paths);
   });
 
 });
